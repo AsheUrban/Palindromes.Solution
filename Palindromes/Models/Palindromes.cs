@@ -33,7 +33,7 @@ namespace PChecker
       char[] revArray = userInput.ToCharArray();
       Array.Reverse( revArray );
       
-      if(Enumerable.SequenceEqual(userInput,revArray))
+      if(Enumerable.SequenceEqual(userInput, revArray))
       {
         return true;
       }

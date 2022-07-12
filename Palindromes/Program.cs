@@ -4,7 +4,7 @@ using PChecker.Models;
 
 namespace PChecker.Models
 {
-  public class Program
+  public class Program // does this need to be Solution???
   {
     public static void Main()
     {
