@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace PChecker
+namespace PChecker.Models
 {
   public class Palindrome
   {
@@ -10,9 +10,9 @@ namespace PChecker
     public string UserInput {get; set; }
 
     // Constructor
-    public Palindrome(string userInput1)
+    public Palindrome(string userInput)
     {
-      UserInput = userInput1;
+      UserInput = userInput;
     }
 
     public bool IsWord(string userInput1)
@@ -33,7 +33,7 @@ namespace PChecker
       char[] revArray = userInput.ToCharArray();
       Array.Reverse( revArray );
       
-      if(Enumerable.SequenceEqual(userInput, revArray))
+      if(Enumerable.SequenceEqual(uInput, revArray)) //Initially had userInput here and passed tests
       {
         return true;
       }

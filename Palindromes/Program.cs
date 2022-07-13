@@ -10,15 +10,20 @@ namespace PChecker.Models
     {
 
       Console.WriteLine("Enter a word to learn if it is a palindrome: ");
-      string userInputWord = Console.ReadLine(); // Do we need to pass an argument here?
+      string userInputWord = Console.ReadLine(); 
+      Console.WriteLine("You entered: " + userInputWord);
 
-      Palindrome userInput1 = new Palindrome(userInput);
-      // Palindrome userInput2 = new Palindrome();
+      // Palindrome userInput1 = new Palindrome(userInputWord);
 
-      Console.WriteLine(userInput);
-      Console.WriteLine(revArray);
-
-      // Need to call IsPalindrome
+      // if (userInput1.IsPalindrome(""))
+      // {
+      //     Console.WriteLine(userInput1);
+      //     Console.WriteLine(revArray);
+      // } 
+      // else
+      // {
+      //   Console.WriteLine("Sorry, that is not a palindrome! Try again!");
+      // }
 
     }
   }
