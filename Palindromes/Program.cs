@@ -2,9 +2,9 @@ using System;
 // using System.Collections.Generic;
 using PChecker.Models;
 
-namespace PChecker.Models
+namespace PChecker
 {
-  public class Program // does this need to be Solution???
+  public class Program 
   {
     public static void Main()
     {
@@ -13,16 +13,19 @@ namespace PChecker.Models
       string userInputWord = Console.ReadLine(); 
       Console.WriteLine("You entered: " + userInputWord);
 
-      // Palindrome userInput1 = new Palindrome(userInputWord);
+      Palindrome userInput1 = new Palindrome(userInputWord);
 
-      // if (userInput1.IsPalindrome(""))
+      Console.WriteLine(userInput1);
+  
+
+      // if (userInput1.IsPalindrome())
       // {
-      //     Console.WriteLine(userInput1);
-      //     Console.WriteLine(revArray);
+      //     // Console.WriteLine("YAY");
+      //     // Console.WriteLine(revArray);
       // } 
       // else
       // {
-      //   Console.WriteLine("Sorry, that is not a palindrome! Try again!");
+      //   // Console.WriteLine("Sorry, that is not a palindrome! Try again!");
       // }
 
     }
